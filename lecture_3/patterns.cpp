@@ -20,13 +20,31 @@ using namespace std;
 // }
 
 // squre pattern
+// int main()
+
+// {
+//     for (int row = 0; row < 4; row++)
+//     {
+//         for (int col = 0; col < 4; col++)
+//         {
+//             cout << " * ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// hollow squre pattern
 int main()
 {
-    for (int row = 0; row < 4; row++)
+    int n;
+    cout << "Enter the number : ";
+    cin >> n;
+
+    for (int row = 0; row < n; row++)
     {
-        for (int col = 0; col < 4; col++)
+        for (int col = 0; col < n; col++)
         {
-            cout << " * "; 
+            cout << " * ";
         }
         cout << endl;
     }

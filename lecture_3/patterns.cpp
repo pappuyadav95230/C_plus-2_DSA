@@ -50,18 +50,45 @@ using namespace std;
 //     }
 // }
 
-
 // Hollow Rectangle
-int main(){
-    for(int row=0; row<3; row++){
-        for(int col=0; col<5; col++){
-            if(row==0 || row==2 || col==0 || col==4){
-                cout<<" * ";
-            }
-            else{
-                cout<<"   ";
+// int main(){
+//     // outer row for 3 row
+//     for(int row=0; row<3; row++){
+//         // inner col for 5 col
+//         for(int col=0; col<5; col++){
+//             // row 0 or row 2 print 5 * or col or col 4 is print the * other is print the space
+//             if(row==0 || row==2 || col==0 || col==4){
+//                 cout<<" * ";
+//             }
+//             else{
+//                 cout<<"   ";
+//             }
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// Hollow other methods
+int main()
+{
+    for (int row = 0; row < 3; row++)
+    {
+        if (row == 0 || row == 2)
+        {
+            for (int col = 0; col < 5; col++)
+            {
+                cout << "* ";
             }
         }
-        cout<<endl;
+        else
+        {
+            cout << "* ";
+            for (int i = 0; i < 3; i++)
+            {
+                cout <<"  ";
+            }
+            cout << "* ";
+        }
+        cout << endl;
     }
 }

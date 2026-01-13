@@ -94,20 +94,45 @@ using namespace std;
 // }
 
 // for big hollow
+// int main()
+// {
+//     for (int row = 0; row < 6; row++)
+//     {
+//         for (int col = 0; col < 6; col++)
+//         {
+//             if (row == 0 || row == 5 || col == 0 || col == 5)
+//             {
+//                 cout << " * ";
+//             }
+//             else
+//             {
+//                 cout << "   ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// other methods
 int main()
 {
     for (int row = 0; row < 6; row++)
     {
-        for (int col = 0; col < 6; col++)
+        if (row == 0 || row == 5)
         {
-            if (row == 0 || row == 5 || col == 0 || col == 5)
+            for (int col = 0; col < 5; col++)
             {
                 cout << " * ";
             }
-            else
+        }
+        else
+        {
+            cout << " * ";
+            for (int i = 0; i < 3; i++)
             {
                 cout << "   ";
             }
+            cout << " * ";
         }
         cout << endl;
     }

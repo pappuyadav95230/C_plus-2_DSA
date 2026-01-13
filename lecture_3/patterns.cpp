@@ -114,13 +114,40 @@ using namespace std;
 // }
 
 // other methods
+// int main()
+// {
+//     for (int row = 0; row < 6; row++)
+//     {
+//         if (row == 0 || row == 5)
+//         {
+//             for (int col = 0; col < 5; col++)
+//             {
+//                 cout << " * ";
+//             }
+//         }
+//         else
+//         {
+//             cout << " * ";
+//             for (int i = 0; i < 3; i++)
+//             {
+//                 cout << "   ";
+//             }
+//             cout << " * ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// make it generic
 int main()
 {
-    for (int row = 0; row < 6; row++)
+    int rowCount, colCount;
+    cin >> rowCount >> colCount;
+    for (int row = 0; row < rowCount; row++)
     {
-        if (row == 0 || row == 5)
+        if (row == 0 || row == rowCount - 1)
         {
-            for (int col = 0; col < 5; col++)
+            for (int col = 0; col < colCount; col++)
             {
                 cout << " * ";
             }
@@ -128,7 +155,7 @@ int main()
         else
         {
             cout << " * ";
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < colCount - 2; i++)
             {
                 cout << "   ";
             }

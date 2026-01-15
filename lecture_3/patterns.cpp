@@ -230,18 +230,38 @@ using namespace std;
 // }
 
 // full Pyramid
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     for (int row = 0; row < n; row++)
+//     {
+//         for (int col = 0; col < n - row; col++)
+//         {
+//             cout << " ";
+//         }
+//         for (int j = 0; j < row + 1; j++)
+//         {
+//             cout << " *";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Inverted Full Pyramid
 int main()
 {
     int n;
-    cout << "Enter the number : ";  
+    cout << "Enter the number : ";
     cin >> n;
     for (int row = 0; row < n; row++)
     {
-        for (int col = 0; col < n - row; col++)
+        for (int col = 0; col < row + 1; col++)
         {
             cout << " ";
         }
-        for (int j = 0; j < row + 1; j++)
+        for (int j = 0; j < n - row; j++)
         {
             cout << " *";
         }

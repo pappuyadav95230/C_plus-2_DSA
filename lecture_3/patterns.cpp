@@ -165,16 +165,85 @@ using namespace std;
 //     }
 // }
 
-// Half Pyramid 
+// Half Pyramid
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     for (int row = 0; row < n; row++)
+//     {
+//         for (int col = 0; col < row + 1; col++)
+//         {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Inverted Half Pyramid
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     for (int row = 0; row < n; row++)
+//     {
+//         for (int col = 0; col < n - row; col++)
+//         {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Numeric Half Pyramid
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     for (int row = 0; row < n; row++)
+//     {
+//         for (int col = 0; col < row + 1; col++)
+//         {
+//             cout << col + 1 << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Inverted Numeric Half Pyramid
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     for (int row = 0; row < n; row++)
+//     {
+//         for (int col = 0; col < n - row; col++)
+//         {
+//             cout << col + 1 << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// full Pyramid
 int main()
 {
     int n;
+    cout << "Enter the number : ";  
     cin >> n;
     for (int row = 0; row < n; row++)
     {
-        for (int col = 0; col < row + 1; col++)
+        for (int col = 0; col < n - row; col++)
         {
-            cout << "* ";
+            cout << " ";
+        }
+        for (int j = 0; j < row + 1; j++)
+        {
+            cout << " *";
         }
         cout << endl;
     }

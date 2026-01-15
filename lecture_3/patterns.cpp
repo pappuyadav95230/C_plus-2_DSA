@@ -94,24 +94,24 @@ using namespace std;
 // }
 
 // for big hollow
-int main()
-{
-    for (int row = 0; row < 6; row++)
-    {
-        for (int col = 0; col < 6; col++)
-        {
-            if (row == 0 || row == 5 || col == 0 || col == 5)
-            {
-                cout << " * ";
-            }
-            else
-            {
-                cout << "   ";
-            }
-        }
-        cout << endl;
-    }
-}
+// int main()
+// {
+//     for (int row = 0; row < 6; row++)
+//     {
+//         for (int col = 0; col < 6; col++)
+//         {
+//             if (row == 0 || row == 5 || col == 0 || col == 5)
+//             {
+//                 cout << " * ";
+//             }
+//             else
+//             {
+//                 cout << "   ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
 
 // other methods
 // int main()
@@ -164,3 +164,18 @@ int main()
 //         cout << endl;
 //     }
 // }
+
+// Half Pyramid 
+int main()
+{
+    int n;
+    cin >> n;
+    for (int row = 0; row < n; row++)
+    {
+        for (int col = 0; col < row + 1; col++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}

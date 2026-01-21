@@ -15,4 +15,5 @@ void fun2()
 int main()
 {
     fun2();
+    return 0;  // it return the 0 for operting system
 }

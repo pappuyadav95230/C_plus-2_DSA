@@ -15,4 +15,5 @@ void PrintName()
 int main()
 {
     PrintName();
+    PrintName();
 }

@@ -22,9 +22,8 @@ using namespace std;
 using namespace std;
 
 int g = 100; // Global
-
 int main()
 {
     cout << g;
     return 0;
-} 
+}

@@ -21,20 +21,40 @@
 //     return 0;
 // }
 
+// print 567 -> 567 i just try not sure
+// #include <iostream>
+// using namespace std;
 
-// print 567 -> 567 i just try not sure 
+// void printNumber(int n)
+// {
+//     while (n != 0)
+//     {
+//         int ans = 0;
+//         int digit = ans * 10 + n;
+//         cout << digit;
+//         break;
+//     }
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     printNumber(n);
+//     return 0;
+// }
+
+// print 567 -> 765 try 
 #include <iostream>
 using namespace std;
 
-void printNumber(int n)
+int printNumber(int n)
 {
-    while (n != 0)
-    {
-        int ans = 0;
-        int digit = ans * 10 + n;
-        cout << digit;
-        break;
-    }
+    int ans = 0;
+    int digit = ans * 10 + n;
+    cout << digit;
+    return digit;
 }
 
 int main()
@@ -43,5 +63,6 @@ int main()
     cout << "Enter the number : ";
     cin >> n;
     printNumber(n);
+
     return 0;
 }

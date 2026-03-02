@@ -15,7 +15,7 @@ int main()
         {
             numZero++;
         }
-        else
+        if(arr[i] == 1)
         {
             numOne++;
         }

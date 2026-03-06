@@ -1,6 +1,7 @@
 // Assume duplicate element is not there in array
 #include <iostream>
 #include <vector>
+#include <climits>
 using namespace std;
 
 int main()
@@ -14,6 +15,7 @@ int main()
 
     for (int i = 0; i < sizea; i++)
     {
+
         ans.push_back(arr[i]);
     }
 

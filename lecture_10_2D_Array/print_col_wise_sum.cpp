@@ -9,7 +9,7 @@ void printRowWiseSum(int arr[][3], int rows, int cols)
         int sum = 0;
         for (int j = 0; j < cols; j++)
         {
-            sum = sum + arr[i][j];
+            sum = sum + arr[j][i];
         }
         cout << sum << endl;
     }
@@ -44,4 +44,3 @@ int main()
     printRowWiseSum(arr, rows, cols);
     return 0;
 }
-

@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int findmin(int arr[][3], int rows, int cols)
+{
+    int min = INT_MAX;
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (arr[i][j] < min)
+            {
+                min = arr[i][j];
+            }
+        }
+    }
+    return min;
+}
+
+int main()
+{
+    int arr[3][3];
+    int rows = 3;
+    int cols = 3;
+
+    // input
+    cout << "Enter the array elements" << endl;
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            cin >> arr[i][j];
+        }
+    }
+
+    int minimum = findmin(arr, rows, cols);
+    cout << "minmum number is : " << minimum << endl;
+    return 0;
+}

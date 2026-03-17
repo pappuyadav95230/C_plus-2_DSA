@@ -12,7 +12,7 @@ int main()
 
     arr.push_back(a);
     arr.push_back(b);
-    arr.push_back(c);
+    arr.push_back(c); 
 
     for (int i = 0; i < arr.size(); i++)
     {

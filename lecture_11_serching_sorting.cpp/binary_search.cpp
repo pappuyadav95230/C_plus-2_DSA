@@ -5,10 +5,11 @@ int binarySearch(int arr[], int size, int target)
 {
     int start = 0;
     int end = size - 1;
+    int mid = start + (end - start) / 2;
 
     while (start <= end)
     {
-        int mid = start + (end - start) / 2;
+
         int element = arr[mid];
 
         if (element == target)
@@ -23,6 +24,7 @@ int binarySearch(int arr[], int size, int target)
         {
             start = mid + 1;
         }
+        int mid = start + (end - start) / 2;
     }
     return -1;
 }
@@ -43,6 +45,5 @@ int main()
     {
         cout << "target found at index: " << indexOftarget << endl;
     }
-
     return 0;
 }

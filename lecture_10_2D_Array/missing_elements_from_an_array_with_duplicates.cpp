@@ -1,24 +1,60 @@
+// #include <iostream>
+// using namespace std;
+
+// void findMissingNumber(int arr[], int n)
+// {
+//     // visited methods
+//     for (int i = 0; i < n; i++)
+//     {
+//         // make the nmber absulute
+//         int index = abs(arr[i]);
+//         if (arr[index - 1] > 0)
+//         {
+//             // mark as the visited number
+//             arr[index - 1] *= -1;
+//         }
+//     }
+
+//     // printing missing element
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] > 0)
+//         {
+//             cout << i + 1 << endl;
+//         }
+//     }
+// }
+
+// int main()
+// {
+//     int arr[] = {1, 3, 2, 3, 4};
+//     int n = sizeof(arr) / sizeof(int);
+
+//     findMissingNumber(arr, n);
+// }
+
 #include <iostream>
 using namespace std;
 
 void findMissingNumber(int arr[], int n)
 {
-    // visited methods
-    for (int i = 0; i < n; i++)
+
+    int i = 0;
+    while (i < n)
     {
-        // make the nmber absulute
-        int index = abs(arr[i]);
-        if (arr[index - 1] > 0)
+        int index = arr[i] - 1;
+        if (arr[i] != arr[index])
         {
-            // mark as the visited number
-            arr[index - 1] *= -1;
+            swap(arr[i], arr[index]);
+        }
+        else
+        {
+            i++;
         }
     }
-
-    // printing missing element
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > 0)
+        if (arr[i] != i + 1)
         {
             cout << i + 1 << endl;
         }
@@ -27,7 +63,7 @@ void findMissingNumber(int arr[], int n)
 
 int main()
 {
-    int arr[] = {1, 3, 2, 3, 4};
+    int arr[] = {1, 3, 5, 3, 4};
     int n = sizeof(arr) / sizeof(int);
 
     findMissingNumber(arr, n);

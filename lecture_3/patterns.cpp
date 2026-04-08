@@ -249,19 +249,207 @@ using namespace std;
 //     }
 // }
 
-// Inverted Full Pyramid
+// // Inverted Full Pyramid
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     for (int row = 0; row < n; row++)
+//     {
+//         for (int col = 0; col < row + 1; col++)
+//         {
+//             cout << " ";
+//         }
+//         for (int j = 0; j < n - row; j++)
+//         {
+//             cout << " *";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             cout << "*"<<" ";
+//         }
+//         cout << endl;
+
+//     }
+// }
+
+// Fibonacci sequence
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
+//     int a = 0;
+//     int b = 1;
+//     cout<<a<< " "<<b<<" ";
+//     for (int i = 2; i < n; i++)
+//     {
+//         int next = (a + b);
+//         cout << next << " ";
+//         a = b;
+//         b = next;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     for (int i = 0; i < 4; i++)
+//     {
+//         for (int j = 0; j < 4; j++)
+//         {
+//             if (i == 0 || i == 3 || j == 0 || j == 3)
+//             {
+//                 cout << " * ";
+//             }
+//             else
+//             {
+//                 cout << "   ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number :";
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout <<" *";
+//         }
+//         cout<<endl;
+//     }
+
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter the number :";
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n - i; j++)
+//         {
+//             cout << " ";
+//         }
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout << " *";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     unsigned long long fac = 1;
+//     cin >> n;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         fac = fac * i;
+//     }
+//     cout<<fac;
+// }
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int a = 0;
+//     int b = 1;
+//     cout << a << " " << b << " ";
+//     for (int i = 2; i < n; i++)
+//     {
+//         int next = a + b;
+//         cout << next << " ";
+//         a = b;
+//         b = next;
+//     }
+// }
+
+// int main()
+// {
+//     int n;
+//     unsigned long long fac = 1;
+//     cin >> n;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         fac = fac * i;
+//     }
+//     cout << fac;
+// }
+
+#include <iostream>
+using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n - i; j++)
+//         {
+//             cout << " ";
+//         }
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout << " *";
+//         }
+//         cout << endl;
+//     }
+// }
+
 int main()
 {
     int n;
-    cout << "Enter the number : ";
     cin >> n;
-    for (int row = 0; row < n; row++)
+    for (int i = 0; i < n; i++)
     {
-        for (int col = 0; col < row + 1; col++)
+        for (int j = 0; j < i; j++)
         {
             cout << " ";
         }
-        for (int j = 0; j < n - row; j++)
+        for (int j = 0; j < n - i; j++)
         {
             cout << " *";
         }

@@ -40,6 +40,7 @@
 
 // Also find the floting point
 #include <iostream>
+#include<iomanip>
 using namespace std;
 
 int sqrt(int n)
@@ -92,7 +93,7 @@ int main()
         }
         step = step / 10;
     }
-    cout << "Final ans is =" << finalAns << endl;
+    cout << "Final ans is "<< setprecision(precision)<< finalAns << endl;
 
     return 0;
 }

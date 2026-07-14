@@ -134,33 +134,52 @@
 // }
 
 // Array and function
+// #include <iostream>
+// using namespace std;
+
+// int printArray(int arr[], int size)
+// {
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+// void inc(int arr[], int size)
+// {
+//     arr[0] = arr[0] + 10;
+
+//     printArray(arr, size);
+// }
+
+// int main()
+// {
+//     int arr[] = {5,6};
+//     int size = 2;
+
+//     inc(arr, size);
+
+//     printArray(arr, size);
+//     return 0;
+// }
+
+// sum of number
 #include <iostream>
 using namespace std;
 
-int printArray(int arr[], int size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-
-void inc(int arr[], int size)
-{
-    arr[0] = arr[0] + 10;
-
-    printArray(arr, size);
-}
-
 int main()
 {
-    int arr[] = {5,6};
-    int size = 2;
+  int ans = 0;
+  int arr[] = {1, 2, 3, 4, 5};
 
-    inc(arr, size);
+  int n = sizeof(arr) / sizeof(arr[0]);
 
-    printArray(arr, size);
-    return 0;
+  for (int i = 0; i < n; i++)
+  {
+    ans = ans + arr[i];
+  }
+  cout << ans;
+  return 0;
 }
